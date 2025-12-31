@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>850 Ridgewood Ave, Oradell NJ | For Sale</title>
+  <meta name="description" content="850 Ridgewood Ave, Oradell NJ 07649 — For sale. Photos, videos, features, and contact." />
+
+  <style>
+    :root{
+      --bg:#0b0f17;
+      --card:#121a2a;
+      --text:#eaf0ff;
+      --muted:#b8c3e6;
+      --accent:#7aa8ff;
+      --accent2:#7affc9;
+      --border:rgba(255,255,255,.10);
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius: 18px;
+      --max: 1100px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:radial-gradient(1200px 600px at 15% 0%, rgba(122,168,255,.25), transparent 60%),
+      radial-gradient(900px 500px at 85% 10%, rgba(122,255,201,.18), transparent 55%),
+      var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:var(--max); margin:0 auto; padding: 22px;}
+    .topbar{
+      position:sticky; top:0; z-index:50;
+      backdrop-filter: blur(12px);
+      background: rgba(11,15,23,.55);
+      border-bottom: 1px solid var(--border);
+    }
+    .topbar .wrap{display:flex; align-items:center; justify-content:space-between; gap:14px;}
+    .brand{display:flex; align-items:center; gap:10px; font-weight:700; letter-spacing:.2px}
+    .dot{width:10px;height:10px;border-radius:99px;background:linear-gradient(135deg,var(--accent),var(--accent2)); box-shadow:0 0 24px rgba(122,168,255,.35)}
+    nav{display:flex; gap:14px; flex-wrap:wrap; justify-content:flex-end}
+    nav a{font-size:14px; text-decoration:none; color:var(--muted); padding:8px 10px; border-radius:12px; border:1px solid transparent}
+    nav a:hover{color:var(--text); border-color:var(--border); background:rgba(255,255,255,.04)}
+    .hero{
+      padding: 30px 0 10px;
+    }
+    .heroGrid{
+      display:grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap:18px;
+      align-items:stretch;
+    }
+    @media (max-width: 900px){
+      .heroGrid{grid-template-columns:1fr}
+    }
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .heroMedia{
+      position:relative;
+      min-height: 360px;
+      background:#0f1626;
+    }
+    .heroMedia img{width:100%; height:100%; object-fit:cover; display:block; filter:saturate(1.05) contrast(1.05)}
+    .badgeRow{
+      position:absolute; left:14px; right:14px; bottom:14px;
+      display:flex; gap:10px; flex-wrap:wrap;
+    }
+    .badge{
+      font-size:13px;
+      padding:8px 10px;
+      border-radius:999px;
+      background: rgba(0,0,0,.35);
+      border: 1px solid rgba(255,255,255,.16);
+      backdrop-filter: blur(10px);
+    }
+    .heroInfo{padding:18px}
+    h1{margin:0 0 8px; font-size:34px; line-height:1.1}
+    .sub{color:var(--muted); margin:0 0 14px; font-size:15px}
+    .price{
+      display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;
+      margin: 10px 0 12px;
+    }
+    .price .big{font-size:34px; font-weight:800}
+    .pill{
+      font-size:13px; color:#0b0f17;
+      background: linear-gradient(135deg,var(--accent),var(--accent2));
+      padding:7px 10px; border-radius:999px; font-weight:700;
+    }
+    .statGrid{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:10px;
+      margin-top: 12px;
+    }
+    @media (max-width: 520px){ .statGrid{grid-template-columns:1fr} }
+    .stat{
+      padding:12px;
+      border-radius: 14px;
+      background: rgba(255,255,255,.04);
+      border: 1px solid var(--border);
+    }
+    .stat b{display:block; font-size:18px}
+    .stat span{color:var(--muted); font-size:13px}
+    .ctaRow{display:flex; gap:10px; flex-wrap:wrap; margin-top: 16px}
+    .btn{
+      appearance:none; border:0; cursor:pointer; text-decoration:none;
+      padding: 12px 14px; border-radius: 14px; font-weight:700; font-size:14px;
+      display:inline-flex; align-items:center; gap:10px;
+    }
+    .btnPrimary{background: linear-gradient(135deg,var(--accent),var(--accent2)); color:#0b0f17}
+    .btnGhost{background: rgba(255,255,255,.04); border:1px solid var(--border); color:var(--text)}
+    .btn:hover{transform: translateY(-1px)}
+    section{padding: 22px 0}
+    .sectionTitle{display:flex; align-items:flex-end; justify-content:space-between; gap:10px; margin:0 0 12px}
+    .sectionTitle h2{margin:0; font-size:22px}
+    .sectionTitle p{margin:0; color:var(--muted); font-size:14px}
+    .grid2{display:grid; grid-template-columns: 1fr 1fr; gap:14px}
+    @media (max-width: 900px){ .grid2{grid-template-columns:1fr} }
+    .content{padding:16px}
+    ul{margin:0; padding-left: 18px; color:var(--muted)}
+    li{margin:8px 0}
+    .video{
+      aspect-ratio: 16/9;
+      width:100%;
+      border:0;
+      display:block;
+    }
+    .gallery{
+      display:grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap:10px;
+    }
+    .shot{
+      grid-column: span 4;
+      border-radius: 16px;
+      overflow:hidden;
+      border:1px solid var(--border);
+      cursor:pointer;
+      background:#0f1626;
+    }
+    .shot img{width:100%; height:100%; object-fit:cover; display:block; transition: transform .18s ease}
+    .shot:hover img{transform: scale(1.02)}
+    @media (max-width: 900px){ .shot{grid-column: span 6;} }
+    @media (max-width: 520px){ .shot{grid-column: span 12;} }
+
+    .map{width:100%; height:360px; border:0; display:block}
+    .form{display:grid; gap:10px}
+    input, textarea{
+      width:100%;
+      padding:12px 12px;
+      border-radius: 14px;
+      background: rgba(255,255,255,.04);
+      border:1px solid var(--border);
+      color: var(--text);
+      outline:none;
+    }
+    textarea{min-height:120px; resize:vertical}
+    .footer{padding:30px 0 60px; color:var(--muted); font-size:13px}
+    .fineprint{opacity:.9}
+    /* Lightbox */
+    .lightbox{
+      position:fixed; inset:0; background:rgba(0,0,0,.78);
+      display:none; place-items:center; z-index:100;
+      padding: 18px;
+    }
+    .lightbox.open{display:grid}
+    .lightbox img{
+      max-width:min(1100px, 96vw);
+      max-height: 86vh;
+      border-radius: 16px;
+      border:1px solid rgba(255,255,255,.18);
+      box-shadow: 0 20px 60px rgba(0,0,0,.6);
+    }
+    .lightbox .close{
+      position:absolute; top:14px; right:14px;
+      background: rgba(255,255,255,.10);
+      border:1px solid rgba(255,255,255,.18);
+      color:var(--text);
+      border-radius: 999px;
+      padding: 10px 12px;
+      cursor:pointer;
+      font-weight: 800;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <div class="brand"><span class="dot"></span> 850 Ridgewood Ave</div>
+      <nav>
+        <a href="#details">Details</a>
+        <a href="#videos">Videos</a>
+        <a href="#photos">Photos</a>
+        <a href="#map">Map</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="heroGrid">
+        <div class="card heroMedia" aria-label="Hero image">
+          <img
+            src="https://photos.zillowstatic.com/fp/f79afbcf62270bea944839034d7afd94-cc_ft_960.jpg"
+            alt="850 Ridgewood Ave — interior preview"
+            loading="eager"
+          />
+          <div class="badgeRow">
+            <span class="badge">Oradell, NJ 07649</span>
+            <span class="badge">Bi-Level • Brick + Vinyl</span>
+            <span class="badge">Back-up generator • Elevator</span>
+          </div>
+        </div>
+
+        <div class="card heroInfo">
+          <h1>850 Ridgewood Ave</h1>
+          <p class="sub">Modern, upgraded bi-level home with premium finishes, spacious layout, and standout features.</p>
+
+          <div class="price">
+            <div class="big">$1,599,000</div>
+            <div class="pill">For Sale</div>
+          </div>
+
+          <div class="statGrid" role="list">
+            <div class="stat" role="listitem"><b>5</b><span>Bedrooms</span></div>
+            <div class="stat" role="listitem"><b>3</b><span>Bathrooms</span></div>
+            <div class="stat" role="listitem"><b>~3,300</b><span>Sq Ft (approx.)</span></div>
+          </div>
+
+          <div class="ctaRow">
+            <a class="btn btnPrimary" href="#contact">Request a showing</a>
+            <a class="btn btnGhost" href="#videos">Watch videos</a>
+            <a class="btn btnGhost" href="#photos">View photos</a>
+          </div>
+
+          <p class="sub" style="margin-top:14px">
+            Highlights include hardwood floors, Thor kitchen appliances, Cambria countertops, central HVAC, central vacuum, wood fireplace, and a 3-car garage.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="details">
+      <div class="sectionTitle">
+        <h2>Property highlights</h2>
+        <p>Quick overview of features</p>
+      </div>
+
+      <div class="grid2">
+        <div class="card content">
+          <h3 style="margin:0 0 10px">Upgrades & finishes</h3>
+          <ul>
+            <li>Mirage Aspen hardwood floors</li>
+            <li>Fabuwood Onyx kitchen cabinetry</li>
+            <li>Thor appliances (36" chef-style gas range)</li>
+            <li>Cambria countertops (kitchen + baths)</li>
+            <li>Bestar closet systems</li>
+            <li>Laundry area can function as a summer kitchen</li>
+          </ul>
+        </div>
+
+        <div class="card content">
+          <h3 style="margin:0 0 10px">Comfort & functionality</h3>
+          <ul>
+            <li>Central heating & cooling</li>
+            <li>Central vacuum</li>
+            <li>Elevator</li>
+            <li>Back-up generator</li>
+            <li>Wood fireplace</li>
+            <li>3-car attached garage</li>
+            <li>Fenced backyard</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="videos">
+      <div class="sectionTitle">
+        <h2>Video tours</h2>
+        <p>Embedded from YouTube</p>
+      </div>
+
+      <div class="grid2">
+        <div class="card">
+          <iframe class="video"
+            src="https://www.youtube.com/embed/sMTA_EVQqYw"
+            title="Video tour 1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+        <div class="card">
+          <iframe class="video"
+            src="https://www.youtube.com/embed/SSuQ37CXqyA"
+            title="Video tour 2"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="photos">
+      <div class="sectionTitle">
+        <h2>Photo gallery</h2>
+        <p>Tap any photo to enlarge</p>
+      </div>
+
+      <div class="gallery">
+        <div class="shot" data-full="https://photos.zillowstatic.com/fp/f79afbcf62270bea944839034d7afd94-cc_ft_960.jpg">
+          <img src="https://photos.zillowstatic.com/fp/f79afbcf62270bea944839034d7afd94-cc_ft_960.jpg" alt="Photo 1" loading="lazy">
+        </div>
+
+        <div class="shot" data-full="https://photos.zillowstatic.com/fp/4bc17395466962d471028753f847c948-cc_ft_576.jpg">
+          <img src="https://photos.zillowstatic.com/fp/4bc17395466962d471028753f847c948-cc_ft_576.jpg" alt="Photo 2" loading="lazy">
+        </div>
+
+        <div class="shot" data-full="https://photos.zillowstatic.com/fp/80d742877726a63ebc8aa6491c256618-cc_ft_576.jpg">
+          <img src="https://photos.zillowstatic.com/fp/80d742877726a63ebc8aa6491c256618-cc_ft_576.jpg" alt="Photo 3" loading="lazy">
+        </div>
+
+        <div class="shot" data-full="https://photos.zillowstatic.com/fp/c6da3e44b0f8b020c17e43fc896bba18-cc_ft_576.jpg">
+          <img src="https://photos.zillowstatic.com/fp/c6da3e44b0f8b020c17e43fc896bba18-cc_ft_576.jpg" alt="Photo 4" loading="lazy">
+        </div>
+
+        <div class="shot" data-full="https://photos.zillowstatic.com/fp/de7ba71a5c5f8fa6407d49485a2957de-cc_ft_576.jpg">
+          <img src="https://photos.zillowstatic.com/fp/de7ba71a5c5f8fa6407d49485a2957de-cc_ft_576.jpg" alt="Photo 5" loading="lazy">
+        </div>
+      </div>
+
+      <p class="sub" style="margin-top:12px">
+        Want all listing photos added? Send me the Zillow photo URLs (or upload the images), and I’ll expand the gallery to the full set.
+      </p>
+    </section>
+
+    <section id="map">
+      <div class="sectionTitle">
+        <h2>Location</h2>
+        <p>Map + neighborhood context</p>
+      </div>
+
+      <div class="card">
+        <iframe
+          class="map"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=850%20Ridgewood%20Ave%20Oradell%20NJ%2007649&output=embed"
+          title="Map of 850 Ridgewood Ave, Oradell NJ"></iframe>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="sectionTitle">
+        <h2>Request a showing</h2>
+        <p>Quick inquiry form</p>
+      </div>
+
+      <div class="grid2">
+        <div class="card content">
+          <h3 style="margin:0 0 10px">Contact</h3>
+          <p class="sub" style="margin-top:0">
+            Replace the placeholders below with your agent details (name, phone, email).
+          </p>
+          <ul>
+            <li><b>Agent:</b> Your Name</li>
+            <li><b>Phone:</b> (201) 000-0000</li>
+            <li><b>Email:</b> your@email.com</li>
+          </ul>
+
+          <a class="btn btnPrimary" style="margin-top:10px" href="tel:+12010000000">Call now</a>
+          <a class="btn btnGhost" style="margin-top:10px" href="mailto:your@email.com?subject=850%20Ridgewood%20Ave%20-%20Showing%20Request">Email inquiry</a>
+        </div>
+
+        <div class="card content">
+          <!-- Simple form placeholder: you can connect this to Formspree / Netlify Forms -->
+          <form class="form" id="leadForm">
+            <input name="name" placeholder="Your name" required />
+            <input name="phone" placeholder="Phone" />
+            <input name="email" type="email" placeholder="Email" required />
+            <textarea name="message" placeholder="Message (preferred dates/times, questions, etc.)"></textarea>
+            <button class="btn btnPrimary" type="submit">Send request</button>
+            <p class="sub" id="formNote" style="margin:0"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">
+      <div class="fineprint">
+        © <span id="year"></span> • 850 Ridgewood Ave • This page is a marketing website template. Verify all details with the official listing / agent.
+      </div>
+    </div>
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="close" id="closeLb" aria-label="Close">✕</button>
+    <img id="lbImg" alt="Enlarged photo" />
+  </div>
+
+  <script>
+    // Footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Gallery lightbox
+    const lb = document.getElementById("lightbox");
+    const lbImg = document.getElementById("lbImg");
+    const closeLb = document.getElementById("closeLb");
+
+    document.querySelectorAll(".shot").forEach(el => {
+      el.addEventListener("click", () => {
+        lbImg.src = el.dataset.full;
+        lb.classList.add("open");
+        lb.setAttribute("aria-hidden","false");
+      });
+    });
+
+    function closeLightbox(){
+      lb.classList.remove("open");
+      lb.setAttribute("aria-hidden","true");
+      lbImg.src = "";
+    }
+
+    closeLb.addEventListener("click", closeLightbox);
+    lb.addEventListener("click", (e) => { if(e.target === lb) closeLightbox(); });
+    document.addEventListener("keydown", (e) => { if(e.key === "Escape") closeLightbox(); });
+
+    // Form placeholder (no backend)
+    const form = document.getElementById("leadForm");
+    const note = document.getElementById("formNote");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      note.textContent = "Form submitted (demo). Connect this form to Formspree / Netlify Forms to receive inquiries.";
